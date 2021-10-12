@@ -1,0 +1,56 @@
+header {
+  background-color: #dbe2bf;
+  padding: vw(10) vw(30) vw(10) vw(30);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    padding: 0;
+    position: relative;
+    a {
+      width: 100%;
+      img {
+        height: vw(75);
+      }
+    }
+  }
+  .head_btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .profile_btn {
+      a {
+        img {
+          height: vw(50);
+        }
+      }
+    }
+    .btn_hamb {
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.4s;
+      margin-left: vw(25);
+      padding-top: vw(10);
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: vw(55);
+        height: vw(8);
+        background-color: #333;
+        margin: vw(10) 0;
+        transition: 0.4s;
+      }
+    }
+    .hamb_x {
+      .bar1 {
+        transform: rotate(-45deg) translate(vw(-10), vw(12));
+      }
+      .bar2 {
+        opacity: 0;
+      }
+      .bar3 {
+        transform: rotate(45deg) translate(vw(-13), vw(-16));
+      }
+    }
+  }
+}

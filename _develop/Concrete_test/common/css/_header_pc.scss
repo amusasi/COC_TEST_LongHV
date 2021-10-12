@@ -1,0 +1,25 @@
+header {
+  background-color: #dbe2bf;
+  padding: 15px 60px 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    padding: 0;
+    position: relative;
+    a {
+      width: 100%;
+      img {
+        height: 65px;
+      }
+    }
+  }
+  
+  .profile_btn {
+    a {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}

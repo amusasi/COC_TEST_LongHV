@@ -1,0 +1,509 @@
+@media screen and (min-width: 769px), print {
+  .contain {
+    background-color: #f2f2f2;
+    height: 840px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contain .sidebar {
+    background-color: white;
+    overflow: hidden;
+    padding-top: 140px;
+    width: 285px;
+    text-align: center;
+  }
+  .contain .sidebar li {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .contain .sidebar li button {
+    font-size: 2rem;
+    width: 100%;
+    text-align: left;
+    padding: 25px 5px 25px 55px;
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+  }
+  .contain .sidebar .active {
+    background: #55642c;
+    color: white;
+  }
+  .contain .tabcontent {
+    display: none;
+    width: -webkit-calc(100% - 285px);
+    width: -moz-calc(100% - 285px);
+    width: calc(100% - 285px);
+  }
+  .contain .tabcontent .tabctn_t {
+    background-color: #55642c;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 60px 60px 120px 60px;
+  }
+  .contain .tabcontent .tabctn_t h3 {
+    color: white;
+    font-size: 4rem;
+  }
+  .contain .tabcontent .tabctn_t .mbtn button {
+    font-size: 2.4rem;
+    width: 200px;
+    padding: 15px 0;
+    -moz-border-radius: 40px;
+         border-radius: 40px;
+    border: white 2px solid;
+    margin-left: 30px;
+  }
+  .contain .tabcontent .tabctn_t .mbtn .add_btn {
+    background-color: #55642c;
+    color: white;
+    border: white 2px solid;
+  }
+  .contain .tabcontent .tabctn_t .mbtn .deletea_btn {
+    background-color: #dbe2bf;
+    border: #dbe2bf 2px solid;
+  }
+  .contain .tabcontent .tabctn_info {
+    background-color: white;
+    margin: -60px 60px 0 60px;
+    padding: 40px 30px;
+    -moz-border-radius: 5px;
+         border-radius: 5px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer {
+    height: 480px;
+    padding: 25px 35px;
+    border: #c9c9c9 solid 1px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table {
+    width: 100%;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr {
+    position: relative;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td {
+    font-size: 2rem;
+    text-align: center;
+    min-width: 70px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th:first-child,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td:first-child {
+    text-align: left;
+    padding-right: 40px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th:nth-child(2),
+  .contain .tabcontent .tabctn_info .tb_outer table tr td:nth-child(2) {
+    text-align: left;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th button img,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td button img {
+    padding-top: 4px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"],
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"]:before,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -75%;
+    left: 0;
+    border: 2px solid #dbe2bf;
+    -moz-border-radius: 3px;
+         border-radius: 3px;
+    background-color: white;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"]:checked:after,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-color: #dbe2bf;
+    top: -75%;
+    left: 0;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th {
+    font-weight: bold;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr td {
+    padding-top: 30px;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr:not(:first-of-type)::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #c9c9c9;
+    left: 0px;
+    top: 15px;
+  }
+  .contain .tabcontent_config .tabctn_info .tb_outer table tr th:first-child,
+  .contain .tabcontent_config .tabctn_info .tb_outer table tr td:first-child {
+    padding-right: 0px;
+    width: 33%;
+  }
+  .addedit {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 240px 0;
+    display: none;
+    position: fixed;
+    top: 0;
+  }
+  .addedit .form_ctn {
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+  }
+  .addedit .form_ctn h3 {
+    font-size: 3.8rem;
+    padding-bottom: 40px;
+    text-align: left;
+    padding-left: 50px;
+  }
+  .addedit .form_ctn .btn_cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .addedit .form_ctn form .formstyle {
+    padding: 0 90px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 20px;
+  }
+  .addedit .form_ctn form .formstyle label {
+    width: 150px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  .addedit .form_ctn form .formstyle .form1 {
+    width: -webkit-calc(80% - 150px);
+    width: -moz-calc(80% - 150px);
+    width: calc(80% - 150px);
+    height: 40px;
+    border: #dbe2bf solid 1px;
+    -moz-border-radius: 2px;
+         border-radius: 2px;
+    font-size: 1.6rem;
+    padding-left: 12px;
+  }
+  .addedit .form_ctn form .formstyle .form1:active {
+    border: black solid 1px;
+  }
+  .addedit .form_ctn form .formstyle .form1:focus {
+    border: black solid 1px;
+  }
+  .addedit .form_ctn form .formstyle select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .addedit .form_ctn form .formstyle .greenf {
+    background-color: #f0f4e4;
+  }
+  .addedit .form_ctn form .formstyle .redf {
+    background-color: #ffefef;
+  }
+  .addedit .form_ctn form .req {
+    position: relative;
+  }
+  .addedit .form_ctn form .req::after {
+    content: "Order field is required";
+    font-size: 1rem;
+    font-weight: lighter;
+    color: red;
+    position: absolute;
+    top: 42px;
+    left: 240px;
+  }
+  .addedit .form_ctn form .smbtn {
+    background-color: #55642c;
+    color: white;
+    font-size: 1.6rem;
+    padding: 10px 55px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contain {
+    background-color: #f2f2f2;
+    height: 100%;
+    padding-bottom: 5.20833vw;
+  }
+  .contain .sidebar {
+    display: none;
+    background-color: white;
+    text-align: center;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contain .sidebar li {
+    width: 25%;
+  }
+  .contain .sidebar li button {
+    font-weight: bold;
+    font-size: 2.73438vw;
+    width: 100%;
+    text-align: center;
+    padding: 3.25521vw 0;
+    -moz-border-radius-topleft: 1.30208vw;
+         border-top-left-radius: 1.30208vw;
+    -moz-border-radius-topright: 1.30208vw;
+         border-top-right-radius: 1.30208vw;
+  }
+  .contain .sidebar li .active {
+    background: #55642c;
+    color: white;
+  }
+  .contain .tabcontent {
+    display: none;
+    width: 100%;
+  }
+  .contain .tabcontent .tabctn_t {
+    background-color: #55642c;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 6.51042vw 3.90625vw 14.32292vw 3.90625vw;
+  }
+  .contain .tabcontent .tabctn_t h3 {
+    color: white;
+    font-size: 5.20833vw;
+  }
+  .contain .tabcontent .tabctn_t .mbtn button {
+    font-size: 3.125vw;
+    width: 26.04167vw;
+    padding: 1.95313vw 0;
+    -moz-border-radius: 5.20833vw;
+         border-radius: 5.20833vw;
+    border: white 0.26042vw solid;
+    margin-left: 3.90625vw;
+  }
+  .contain .tabcontent .tabctn_t .mbtn .add_btn {
+    background-color: #55642c;
+    color: white;
+    border: white 0.26042vw solid;
+  }
+  .contain .tabcontent .tabctn_t .mbtn .deletea_btn {
+    background-color: #dbe2bf;
+    border: #dbe2bf 0.26042vw solid;
+  }
+  .contain .tabcontent .tabctn_info {
+    background-color: white;
+    margin: -7.8125vw 3.90625vw 0 3.90625vw;
+    padding: 3.90625vw 3.25521vw;
+    -moz-border-radius: 0.65104vw;
+         border-radius: 0.65104vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer {
+    height: 62.5vw;
+    padding: 2.60417vw;
+    border: #c9c9c9 solid 0.13021vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table {
+    width: 100%;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr {
+    position: relative;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td {
+    font-size: 2.60417vw;
+    text-align: center;
+    min-width: 9.11458vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th img,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td img {
+    height: 5.20833vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th button img,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td button img {
+    padding-top: 0.52083vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"],
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"] {
+    -webkit-transform: translateY(25%);
+       -moz-transform: translateY(25%);
+        -ms-transform: translateY(25%);
+            transform: translateY(25%);
+    position: relative;
+    cursor: pointer;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"]:before,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.94792vw;
+    height: 4.94792vw;
+    top: -24%;
+    left: -15%;
+    border: 2px solid #dbe2bf;
+    background-color: white;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th input[type="checkbox"]:checked:after,
+  .contain .tabcontent .tabctn_info .tb_outer table tr td input[type="checkbox"]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 4.94792vw;
+    height: 4.94792vw;
+    background-color: #dbe2bf;
+    border: 2px solid #dbe2bf;
+    top: -24%;
+    left: -15%;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr th {
+    font-weight: bold;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr td {
+    padding-top: 3.90625vw;
+  }
+  .contain .tabcontent .tabctn_info .tb_outer table tr:not(:first-of-type)::after {
+    content: "";
+    height: 0.13021vw;
+    width: 100%;
+    position: absolute;
+    background: #c9c9c9;
+    left: 0vw;
+    top: 1.95313vw;
+  }
+  .contain .tabcontent_config .tabctn_info .tb_outer table tr th:first-child,
+  .contain .tabcontent_config .tabctn_info .tb_outer table tr td:first-child {
+    padding-right: 0vw;
+    width: 33%;
+  }
+  .addedit {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 31.25vw 0;
+    display: none;
+    position: fixed;
+    top: 0;
+  }
+  .addedit .form_ctn {
+    background-color: white;
+    margin: 3.25521vw 3.90625vw 0;
+    padding: 5.20833vw 0;
+    position: relative;
+  }
+  .addedit .form_ctn h3 {
+    font-size: 4.94792vw;
+    padding-bottom: 5.20833vw;
+    text-align: left;
+    padding-left: 6.51042vw;
+  }
+  .addedit .form_ctn .btn_cancel {
+    position: absolute;
+    top: 2.60417vw;
+    right: 2.60417vw;
+  }
+  .addedit .form_ctn form .formstyle {
+    padding: 0 11.71875vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 2.60417vw;
+  }
+  .addedit .form_ctn form .formstyle label {
+    width: 30%;
+    font-size: 2.08333vw;
+    font-weight: bold;
+    text-align: left;
+  }
+  .addedit .form_ctn form .formstyle .form1 {
+    width: -webkit-calc(100% - 30%);
+    width: -moz-calc(100% - 30%);
+    width: calc(100% - 30%);
+    height: 5.20833vw;
+    border: #dbe2bf solid 0.13021vw;
+    -moz-border-radius: 0.26042vw;
+         border-radius: 0.26042vw;
+    font-size: 2.60417vw;
+    padding-left: 1.5625vw;
+  }
+  .addedit .form_ctn form .formstyle .form1:active {
+    border: black solid 0.13021vw;
+  }
+  .addedit .form_ctn form .formstyle .form1:focus {
+    border: black solid 0.13021vw;
+  }
+  .addedit .form_ctn form .formstyle select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .addedit .form_ctn form .formstyle .greenf {
+    background-color: #f0f4e4;
+  }
+  .addedit .form_ctn form .formstyle .redf {
+    background-color: #ffefef;
+  }
+  .addedit .form_ctn form .req {
+    position: relative;
+  }
+  .addedit .form_ctn form .req::after {
+    content: "Order field is required";
+    font-size: 1.82292vw;
+    font-weight: lighter;
+    color: red;
+    position: absolute;
+    top: 5.46875vw;
+    left: 31.25vw;
+  }
+  .addedit .form_ctn form .smbtn {
+    background-color: #55642c;
+    color: white;
+    font-size: 2.08333vw;
+    padding: 1.30208vw 7.16146vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 5.20833vw;
+  }
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <title></title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica+Neue">
+  <link rel="stylesheet" href="./common/css/common.css">
+</head>
+
+<body class="topPg">
+  <div class="container">
+    <header class="header" id="header">
+      <h1>
+        <a href="https://www.facebook.com/ConcreteCorpVN/" target="_blank">
+          <img src="images/logo.png" alt="">
+        </a>
+      </h1>
+      <div class="head_btns">
+        <div class="profile_btn"><a href="#"><img src="images/profile-user.png" alt=""></a></div>
+        <div class="show_sp" id="hambtn">
+          <div class="btn_hamb" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <div class="contain">
+        <ul class="sidebar" id="sideb">
+          <li>
+            <button>Users</button>
+          </li>
+          <li>
+            <button>Collectibles</button>
+          </li>
+          <li>
+            <button class="tablinks" onclick="openFt(event, 'Categories')">Categories</button>
+          </li>
+          <li>
+            <button class="tablinks" onclick="openFt(event, 'Configurations')" id="defaultOpen">Configurations</button>
+          </li>
+        </ul>
+        <div id="Configurations" class="tabcontent tabcontent_config">
+          <div class="tabctn_t">
+            <h3>Configurations</h3>
+            <div class="mbtn">
+              <button class="add_btn" onclick="openForm('myForm')">Add</button>
+            </div>
+          </div>
+          <div class="tabctn_info">
+            <div class="tb_outer">
+              <table>
+                <tr>
+                  <th>Contant Name</th>
+                  <th>Value</th>
+                  <th>Edit</th>
+                </tr>
+                <tr class="wbd">
+                  <td>buyerFee</td>
+                  <td>0</td>
+                  <td><button><img src="images/edit.png" alt=""></button></td>
+                </tr>
+                <tr class="wbd">
+                  <td>sellerFee</td>
+                  <td>250</td>
+                  <td><button><img src="images/edit.png" alt=""></button></td>
+                </tr>
+                <tr class="wbd">
+                  <td>cooperationFee</td>
+                  <td>1750</td>
+                  <td><button><img src="images/edit.png" alt=""></button></td>
+                </tr>
+                <tr class="wbd">
+                  <td>requiredFee</td>
+                  <td>1000</td>
+                  <td><button><img src="images/edit.png" alt=""></button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="Categories" class="tabcontent">
+          <div class="tabctn_t">
+            <h3>Categories</h3>
+            <div class="mbtn">
+              <button class="add_btn" onclick="openForm('myForm')">Add</button>
+              <button class="deletea_btn">Delete All</button>
+            </div>
+          </div>
+          <div class="tabctn_info">
+            <div class="tb_outer">
+              <table>
+                <tr>
+                  <th>Key</th>
+                  <th>Display name</th>
+                  <th>Show/<br class="show_sp">Hide</th>
+                  <th>Order</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                  <th>Bulk Delete</th>
+                </tr>
+                <tr class="wbd">
+                  <td>games</td>
+                  <td>🕹 Games</td>
+                  <td>
+                    <div class="btn_check"><img src="images/check.png" alt=""></div>
+                  </td>
+                  <td>0</td>
+                  <td><button onclick="openForm('myForm2')"><img src="images/edit.png" alt=""></button></td>
+                  <td><button><img src="images/delete.png" alt=""></button></td>
+                  <td> <input type="checkbox" id="" name="" value=""></td>
+                </tr>
+                <tr class="wbd">
+                  <td>defi</td>
+                  <td>💰 DeFi</td>
+                  <td>
+                    <div class="btn_close"><img src="images/close.png" alt=""></div>
+                  </td>
+                  <td>1</td>
+                  <td><button onclick="openForm('myForm')"><img src="images/edit.png" alt=""></button></td>
+                  <td><button><img src="images/delete.png" alt=""></button></td>
+                  <td> <input type="checkbox" id="" name="" value=""></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="addedit" id="myForm">
+        <div class="form_ctn">
+          <h3>Add New Categories</h3>
+          <button class="btn_cancel" onclick="closeForm('myForm')"><img src="images/cancel.png" alt=""></button>
+          <form action="">
+            <div class="formstyle">
+              <label for="ikey_ed">Key</label>
+              <input type="text" id="ikey_ed" name="ikey_ed" class="form1 greenf">
+            </div>
+            <div class="formstyle">
+              <label for="dname">Display name</label>
+              <input type="text" id="dname" name="dname" class="form1">
+            </div>
+            <div class="formstyle">
+              <label for="status">Status</label>
+              <select name="status" id="status" class="form1">
+                <option value="enable">Enable</option>
+                <option value="disable">Disable</option>
+              </select>
+            </div>
+            <div class="formstyle req">
+              <label for="order">Order</label>
+              <input type="text" class="form1 redf" id="order" name="order" required>
+            </div>
+            <div><input type="submit" value="Add" class="smbtn"></div>
+          </form>
+        </div>
+      </div>
+      <div class="addedit" id="myForm2">
+        <div class="form_ctn">
+          <h3>Edit Categories</h3>
+          <button class="btn_cancel" onclick="closeForm('myForm2')"><img src="images/cancel.png" alt=""></button>
+          <form action="">
+            <div class="formstyle">
+              <label for="ikey">Key</label>
+              <input type="text" id="ikey" name="ikey" class="form1 greenf">
+            </div>
+            <div class="formstyle">
+              <label for="dname_ed">Display name</label>
+              <input type="text" id="dname_ed" name="dname_ed" class="form1">
+            </div>
+            <div class="formstyle">
+              <label for="status_ed">Status</label>
+              <select name="status_ed" id="status_ed" class="form1">
+                <option value="enable">Enable</option>
+                <option value="disable">Disable</option>
+              </select>
+            </div>
+            <div class="formstyle">
+              <label for="order_ed">Order</label>
+              <input type="text" class="form1" id="order_ed" name="order_ed" required>
+            </div>
+            <div><input type="submit" value="Add" class="smbtn"></div>
+          </form>
+        </div>
+      </div>
+      <script>
+        //Click to show tabs
+        function openFt(evt, tabName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+
+        }
+
+        // Get the element (tab) with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+        //Click on ADD/EDIT buttons to open forms
+        function openForm(idform) {
+          var id = document.getElementById(idform);
+          id.style.display = "block";
+        }
+        //Click on X to close forms
+        function closeForm(idform) {
+          var id = document.getElementById(idform);
+          id.style.display = "none";
+        }
+
+        // Get the sidebar
+        var sidebar = document.getElementById("sideb");
+        // Get the button that opens the sidebar
+        var hbtn = document.getElementById("hambtn");
+        // When the user clicks the button, open the sidebar 
+        hbtn.onclick = function () {
+          if (sidebar.style.display === "flex") {
+            sidebar.style.display = "none";
+          } else {
+            sidebar.style.display = "flex";
+          }
+        }
+        //Change hamb button into X
+        function myFunction(x) {
+          x.classList.toggle("hamb_x");
+        }
+      </script>
+    </main>
+    <!--/.main-->
+    <!-- end footer -->
+  </div>
+</body>
+
+</html>

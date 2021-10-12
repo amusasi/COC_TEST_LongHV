@@ -1,0 +1,35 @@
+@charset "utf-8";
+// ===================================================================
+//  common_pc.css
+// ===================================================================
+.show_sp {
+  display: none !important;
+}
+
+.container {
+  min-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+a[href^="tel"] {
+  pointer-events: none;
+  text-decoration: none;
+  opacity: 1 !important;
+  cursor: default !important;
+}
+
+a, button {
+  transition: opacity 0.3s ease-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/*======= COMMON =========*/
